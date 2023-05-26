@@ -1,0 +1,7 @@
+{
+    "namespace": "start",
+    "start_screen@common.base_screen": {
+        "$screen_content": "light_start.light_content",
+        "$screen_bg_content": "light_textures.bg"
+    }
+}
