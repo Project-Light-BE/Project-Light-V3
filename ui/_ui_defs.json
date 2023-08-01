@@ -1,7 +1,5 @@
 {
   "ui_defs": [
-    ".light/ui/textures.json",
-    ".light/ui/buttons/light_buttons.json",
-    ".light/ui/screens/light_start.json"
+    
   ]
 }

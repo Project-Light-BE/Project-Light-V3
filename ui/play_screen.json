@@ -1,7 +1,0 @@
-{
-    "namespace": "play",
-    "play_screen@common.base_screen": {
-        "$screen_content": "light_play.light_content",
-        "$screen_bg_content": "light_textures.bg"
-    }
-}
