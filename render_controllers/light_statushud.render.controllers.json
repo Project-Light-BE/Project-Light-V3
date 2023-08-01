@@ -1,0 +1,20 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.light_statushud": {
+            "textures": [
+                "query.is_gliding ? texture.flying : (query.is_on_fire ? texture.burning : (query.is_swimming ? texture.swimming : (query.is_digging ? texture.digging : (query.is_jumping ? texture.jumping : (query.is_sneaking ? texture.sneaking : (query.is_moving ? texture.moving : texture.standing))))))"
+            ],
+            "geometry": "Geometry.light_statushud",
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "light_color_multiplier": 1,
+            "ignore_lighting": true,
+            "materials": [
+                {
+                    "*": "Material.blend"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.player.light_mods": {
+            "loop": true,
+            "bones": {
+                "light_coords_x": {
+                    "position": [
+                        0,
+                        "(q.is_swimming ? -21.5 : 0.0) + -4004",
+                        0
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ]
+                },
+                "light_coords_y": {
+                    "position": [
+                        0,
+                        "(q.is_swimming ? -21.5 : 0.0) + -4014",
+                        0
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ]
+                },
+                "light_coords_z": {
+                    "position": [
+                        0,
+                        "(q.is_swimming ? -21.5 : 0.0) + -4024",
+                        0
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ]
+                },
+                "light_timerhud": {
+                    "position": [
+                        0,
+                        "(q.is_swimming ? -21.5 : 0.0) + 1500",
+                        0
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ]
+                },
+                "light_statushud": {
+                    "position": [
+                        0,
+                        "(q.is_swimming ? -20 : 0.0) + 3215",
+                        0
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ],
+                    "scale": 1.2
+                },
+                "light_armorhud": {
+                    "position": [
+                        0,
+                        "(q.is_swimming ? -20 : 0.0) + 1200",
+                        0
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ],
+                    "scale": 1
+                }
+            }
+        }
+    }
+}

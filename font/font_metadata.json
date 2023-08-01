@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "fonts": [
+        {
+            "font_format": "ttf",
+            "version": 2,
+            "font_name": "Inter-Medium",
+            "font_file": "font/Inter_Medium",
+            "lowPerformanceCompatible": true
+        }
+    ]
+}
