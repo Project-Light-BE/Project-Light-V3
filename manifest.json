@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "header": {
-        "description": "by: §lthe Projevt Light Team:§r\n-Pepe\nKyra\nFlexyus\n\n©Project Light V3\nall rights deserved",
+        "description": "Project Light V3 by: §lthe Projevt Light Team:§r\n-Pepe\nChyves\nKyra\nFlexyus\n\n©Project Light V3\nall rights deserved",
         "name": "Project Light V3.0",
         "uuid": "3971deda-996e-4a2f-90b1-7fe2ea6946b4",
         "version": [
@@ -11,7 +11,7 @@
         ],
         "min_engine_version": [
             1,
-            16,
+            19,
             0
         ]
     },
