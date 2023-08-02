@@ -25,5 +25,17 @@
                 0
             ]
         }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "p",
+            "name": "Cloth Cape Physics",
+            "memory_tier": 1
+        },
+        {
+            "folder_name": "nop",
+            "name": "Default Cape Physics",
+            "memory_tier": 1
+        }
     ]
 }
