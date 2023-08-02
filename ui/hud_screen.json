@@ -8,6 +8,9 @@
                 "value": [
                     {
                         "hud@light_mods_panel.light_mods_panel": {}
+                    },
+                    {
+                        "mod_menu@light_mod_menu.light_mod_menu_panel": {}
                     }
                 ]
             }

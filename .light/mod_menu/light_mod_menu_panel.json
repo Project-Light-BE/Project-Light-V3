@@ -1,0 +1,60 @@
+{
+    "namespace": "light_mod_menu",
+    "light_mod_menu_panel@config.mod_menu_config": {
+        "type": "panel",
+        "controls": [
+            {
+                "light_mod_menu@light_mod_menu.mod_menu": {}
+            }
+        ]
+    },
+    "mod_menu@pl.pnl": {
+        "controls": [
+            {
+                "mod_menu_bg@pl.img": {
+                    "texture": ".light/texture/bg/mod_menu/base_bg",
+                    "size": [
+                        325,
+                        200
+                    ],
+                    "layer": 3,
+                    "alpha": 0.65,
+                    "controls": [
+                        {
+                            "mod_menu_header@light_mod_menu.mod_menu_header": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "mod_menu_header@pl.img": {
+        "texture": ".light/texture/bg/mod_menu/base_bg",
+        "size": [
+            325,
+            20
+        ],
+        "layer": 3,
+        "alpha": 0.65,
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "controls": [
+            {
+                "light_logo@light_mod_menu.light_logo": {}
+            }
+        ]
+    },
+    "light_logo@pl.img": {
+        "size": [
+            15,
+            15
+        ],
+        "anchor_from": "left_middle",
+        "anchor_to": "left_middle",
+        "layer": 4,
+        "offset": [
+            -5,
+            0
+        ]
+    }
+}
