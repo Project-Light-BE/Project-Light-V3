@@ -1,3 +1,30 @@
 {
-    "namespace": "pl"
+    "namespace": "pl",
+    "img": {
+        "type": "image"
+    },
+    "lbl": {
+        "type": "label"
+    },
+    "pnl": {
+        "type": "panel"
+    },
+    "ipnl": {
+        "type": "input_panel"
+    },
+    "sp": {
+        "type": "stack_panel"
+    },
+    "vsp@pl.sp": {
+        "orientation": "vertical"
+    },
+    "hsp@pl.sp": {
+        "orientation": "horizontal"
+    },
+    "grd": {
+        "type": "grid"
+    },
+    "cstm": {
+        "type": "custom"
+    }
 }
