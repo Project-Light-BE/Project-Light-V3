@@ -1,0 +1,238 @@
+{
+    "namespace": "light_mods_panel",
+    "light_armorhud@pl.pnl": {
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "anchor_from": "bottom_right",
+        "anchor_to": "bottom_right",
+        "controls": [
+            {
+                "light_armorhud": {
+                    "anchor_from": "bottom_right",
+                    "anchor_to": "bottom_right",
+                    "type": "custom",
+                    "renderer": "live_player_renderer",
+                    "size": [
+                        18,
+                        18
+                    ],
+                    "offset": [
+                        -12,
+                        1200.5
+                    ]
+                }
+            }
+        ]
+    },
+    "force_coords": {
+        "type": "image",
+        "texture": ".light/textures/buttons/default",
+        "size": [
+            60,
+            35
+        ],
+        "offset": [
+            -5,
+            5
+        ],
+        "alpha": 0.6,
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "controls": [
+            {
+                "force_coords_content": {
+                    "type": "custom",
+                    "renderer": "live_player_renderer",
+                    "size": [
+                        94.1,
+                        16.89
+                    ],
+                    "layer": 2,
+                    "anchor_from": "top_right",
+                    "anchor_to": "top_right",
+                    "offset": [
+                        20,
+                        -3985
+                    ]
+                }
+            },
+            {
+                "text": {
+                    "type": "panel",
+                    "layer": 2,
+                    "controls": [
+                        {
+                            "text2": {
+                                "type": "label",
+                                "text": "X:",
+                                "offset": [
+                                    5,
+                                    -10
+                                ],
+                                "font_type": "Inter-Medium",
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle"
+                            }
+                        },
+                        {
+                            "text3": {
+                                "type": "label",
+                                "text": "Y:",
+                                "offset": [
+                                    5,
+                                    0
+                                ],
+                                "font_type": "Inter-Medium",
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle"
+                            }
+                        },
+                        {
+                            "text4": {
+                                "type": "label",
+                                "text": "Z:",
+                                "offset": [
+                                    5,
+                                    10
+                                ],
+                                "font_type": "Inter-Medium",
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "status_hud@pl.pnl": {
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "controls": [
+            {
+                "status_hud": {
+                    "type": "image",
+                    "texture": ".light/textures/buttons/default",
+                    "anchor_from": "bottom_left",
+                    "anchor_to": "bottom_left",
+                    "alpha": 0.65,
+                    "offset": [
+                        20,
+                        -5
+                    ],
+                    "size": [
+                        56,
+                        20
+                    ],
+                    "layer": -1,
+                    "controls": [
+                        {
+                            "status_hud_renderer": {
+                                "layer": 2,
+                                "type": "custom",
+                                "renderer": "live_player_renderer",
+                                "anchor_from": "bottom_left",
+                                "anchor_to": "bottom_left",
+                                "size": [
+                                    16,
+                                    16
+                                ],
+                                "offset": [
+                                    -10,
+                                    2992
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "timer_hud@pl.pnl": {
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "controls": [
+            {
+                "timer_hud": {
+                    "type": "image",
+                    "texture": ".light/textures/buttons/default",
+                    "size": [
+                        56,
+                        16
+                    ],
+                    "layer": -1,
+                    "alpha": 0.65,
+                    "anchor_from": "bottom_left",
+                    "anchor_to": "bottom_left",
+                    "offset": [
+                        20,
+                        -6
+                    ],
+                    "controls": [
+                        {
+                            "timer_hud_content": {
+                                "type": "custom",
+                                "renderer": "live_player_renderer",
+                                "size": [
+                                    16,
+                                    16
+                                ],
+                                "layer": 2,
+                                "anchor_from": "bottom_left",
+                                "anchor_to": "bottom_left",
+                                "offset": [
+                                    0,
+                                    1386.5
+                                ]
+                            }
+                        },
+                        {
+                            "timer_hud_text": {
+                                "type": "label",
+                                "text": ":",
+                                "size": [
+                                    48,
+                                    16
+                                ],
+                                "layer": 2,
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "offset": [
+                                    20.5,
+                                    3
+                                ]
+                            }
+                        },
+                        {
+                            "timer_hud_text2": {
+                                "type": "label",
+                                "text": ":",
+                                "size": [
+                                    48,
+                                    16
+                                ],
+                                "layer": 2,
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+                                "offset": [
+                                    27.5,
+                                    3
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

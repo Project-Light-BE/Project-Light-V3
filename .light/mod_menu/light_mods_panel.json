@@ -1,0 +1,84 @@
+{
+    "namespace": "light_mods_panel",
+    "light_mods_panel@pl.vsp": {
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "controls": [
+            {
+                "boss_padding@pl.pnl": {
+                    "size": [
+                        "100%",
+                        20
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#bar_visible",
+                            "binding_type": "collection",
+                            "binding_collection_name": "boss_bars",
+                            "binding_name_override": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "hud_content@light_mods_panel.light_hud_content": {}
+            }
+        ]
+    },
+    "light_hud_content@pl.pnl": {
+        "size": [
+            "100%",
+            "fill"
+        ],
+        "bindings": [
+            {
+                "binding_name": "#hud_visible",
+                "binding_name_override": "#visible",
+                "binding_type": "global"
+            }
+        ],
+        "controls": [
+            {
+                "force_coords@light_mods_panel.force_coords": {}
+            },
+            {
+                "stack_panel1@pl.vsp": {
+                    "anchor_from": "bottom_left",
+                    "anchor_to": "bottom_left",
+                    "size": [
+                        "100%",
+                        "100%c"
+                    ],
+                    "controls": [
+                        {
+                            "timer_hud@light_mods_panel.timer_hud": {}
+                        },
+                        {
+                            "status_hud@light_mods_panel.status_hud": {}
+                        }
+                    ]
+                }
+            },
+            {
+                "stack_panel2@pl.vsp": {
+                    "anchor_from": "bottom_right",
+                    "anchor_to": "bottom_right",
+                    "size": [
+                        "100%",
+                        "100%c"
+                    ],
+                    "controls": [
+                        {
+                            "light_amorhud@light_mods_panel.light_armorhud": {}
+                        },
+                        {
+                            "inventory_hud_panel@light_mods_panel.inventory_hud_panel": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

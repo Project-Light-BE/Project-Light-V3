@@ -1,5 +1,8 @@
 {
     "ui_defs": [
-        ".light/common/light_properties.json"
+        ".light/common/light_properties.json",
+        ".light/mold_menu/mods/light_entity_mods.json",
+        ".light/mod_menu/mods/light_ui_mods.json",
+        ".light/mod_menu/light_mods_panel.json"
     ]
 }
