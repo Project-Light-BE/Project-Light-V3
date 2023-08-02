@@ -26,5 +26,28 @@
     },
     "cstm": {
         "type": "custom"
+    },
+    "drag@common.button": {
+        "draggable": "both",
+        "prevent_touch_input": true,
+        "layer": -1,
+        "size": "$drag_size",
+        "type": "input_panel",
+        "button_mappting": [
+            {
+                "from_button_id": "button.menu_select",
+                "to_button_id": "button.menu_select",
+                "mapping_type": "pressed",
+                "button_up_right_of_first_refusal": true
+            }
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "edit_hud_menu",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#enabled"
+            }
+        ]
     }
 }
