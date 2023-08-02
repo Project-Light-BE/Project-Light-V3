@@ -1,0 +1,18 @@
+{
+    "namespace": "light_pause",
+    "mod_menu_hover_text@pl.img": {
+        "texture": "textures/ui/purpleBorder",
+        "offset": [
+            -24,
+            -5
+        ],
+        "controls": [
+            {
+                "label@pl.txt": {
+                    "text": "Press the mods button 2x",
+                    "font_type": "Inter-Medium"
+                }
+            }
+        ]
+    }
+}

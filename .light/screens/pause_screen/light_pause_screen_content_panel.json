@@ -1,0 +1,56 @@
+{
+    "namespace": "light_pause",
+    "light_pause_main_content@pl.pnl": {
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "controls": [
+            {
+                "light_pause_panel@light_pause.light_pause_panel": {}
+            },
+            {
+                "mod_menu_button@light_pause.mod_menu_button": {}
+            }
+        ]
+    },
+    "light_pause_panel@pl.pnl": {
+        "size": [
+            "100%",
+            "100%"
+        ],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "mod_menu_toggle",
+                "source_property_name": "(not #toggle_state)",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "light_main_stack_panel@light_pause.light_main_stack_panel": {}
+            },
+            {
+                "light_top_right_stack_panel@light_pause.light_top_right_stack_panel": {}
+            },
+            {
+                "light_player_list@light_pause.light_player_list": {}
+            }
+        ]
+    },
+    "mod_menu_button@light_toggle.mod_menu_toggle": {
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
+        "size": [
+            24,
+            24
+        ],
+        "$toggle_view_binding_name": "mod_menu_toggle",
+        "offset": [
+            -5,
+            -5
+        ],
+        "$custom_content": "light_pause.mod_menu_hover_text"
+    }
+}
