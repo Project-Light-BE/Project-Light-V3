@@ -1,0 +1,78 @@
+{
+    "namespace": "light_hud_animations",
+    "light_hud_popup@pl.pnl": {
+        "layer": 1,
+        "controls": [
+            {
+                "bg_image@pl.img": {
+                    "texture": ".light/textures/bg/base_bg",
+                    "anchor_from": "top_middle",
+                    "anchor_to": "top_middle",
+                    "size": [
+                        "100%c - 13px",
+                        "100%c - 6px"
+                    ],
+                    "alpha": 0.65,
+                    "offset": [
+                        0,
+                        -50
+                    ],
+                    "anims": [
+                        "light_hud_animations.light_popup_start"
+                    ],
+                    "controls": [
+                        {
+                            "text@pl.lbl": {
+                                "text": "Found any bugs?\nReport them at dsc.gg/projectlight",
+                                "size": [
+                                    "220px",
+                                    "default"
+                                ],
+                                "text_alignment": "center",
+                                "layer": 1.1
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "light_popup_start": {
+        "anim_type": "wait",
+        "duration": 2,
+        "next": "@light_hud_animations.light_popup_anim"
+    },
+    "light_popup_anim": {
+        "anim_type": "offset",
+        "easing": "out_back",
+        "duration": 0.5,
+        "from": [
+            0,
+            -50
+        ],
+        "to": [
+            0,
+            30
+        ],
+        "next": "@light_hud_animations.light_popup_wait"
+    },
+    "light_popup_wait": {
+        "anim_type": "wait",
+        "duration": 6,
+        "next": "@light_hud_animations.light_popup_end"
+    },
+    "light_popup_end": {
+        "anim_type": "offset",
+        "easing": "in_sine",
+        "duration": 0.5,
+        "from": [
+            0,
+            30
+        ],
+        "to": [
+            0,
+            -50
+        ],
+        "destroy_at_end": "@light_hud_animations.light_popup_start"
+    }
+}

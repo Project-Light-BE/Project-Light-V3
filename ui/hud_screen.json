@@ -11,6 +11,9 @@
                     },
                     {
                         "mod_menu@light_mod_menu.light_mod_menu_panel": {}
+                    },
+                    {
+                        "light_hud_animations_popup@light_hud_animations.light_hud_popup": {}
                     }
                 ]
             }

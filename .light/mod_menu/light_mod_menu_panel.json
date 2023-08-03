@@ -12,7 +12,7 @@
         "controls": [
             {
                 "mod_menu_bg@pl.img": {
-                    "texture": ".light/texture/bg/mod_menu/base_bg",
+                    "texture": ".light/texture/bg/base_bg",
                     "size": [
                         325,
                         200
@@ -29,10 +29,10 @@
         ]
     },
     "mod_menu_header@pl.img": {
-        "texture": ".light/texture/bg/mod_menu/base_bg",
+        "texture": ".light/texture/bg/base_bg",
         "size": [
             325,
-            20
+            35
         ],
         "layer": 3,
         "alpha": 0.65,
@@ -46,14 +46,15 @@
     },
     "light_logo@pl.img": {
         "size": [
-            15,
-            15
+            35,
+            35
         ],
+        "texture": ".light/texture/logo",
         "anchor_from": "left_middle",
         "anchor_to": "left_middle",
-        "layer": 4,
+        "layer": 3,
         "offset": [
-            -5,
+            5,
             0
         ]
     }
