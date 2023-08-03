@@ -77,6 +77,19 @@
                         0
                     ],
                     "scale": 1
+                },
+                "light_directionhud": {
+                    "position": [
+                        -37.9,
+                        "(q.is_swimming ? -20 : 0.0) + 3000",
+                        20
+                    ],
+                    "rotation": [
+                        "(query.is_gliding ? -query.body_x_rotation + -90)",
+                        "(query.is_riding ? query.target_y_rotation)",
+                        0
+                    ],
+                    "scale": 5.13
                 }
             }
         }

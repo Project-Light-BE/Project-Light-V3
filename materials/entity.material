@@ -24,7 +24,7 @@
                 }
             ]
         },
-        "direction_hud:entity_alphablend": {
+        "light_directionhud:entity_alphablend": {
             "+defines": [
                 "USE_UV_ANIM"
             ],

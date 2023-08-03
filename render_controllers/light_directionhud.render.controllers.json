@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.light_directionhud": {
+            "textures": [
+                "texture.light_directionhud"
+            ],
+            "geometry": "Geometry.light_directionhud",
+            "is_hurt_color": {},
+            "on_fire_color": {},
+            "light_color_multiplier": 1,
+            "uv_anim": {
+                "offset": [
+                    "0.002777777777777 * (90 + query.camera_rotation(1))",
+                    0
+                ]
+            },
+            "ignore_lighting": true,
+            "materials": [
+                {
+                    "*": "Material.light_directionhud"
+                }
+            ]
+        }
+    }
+}

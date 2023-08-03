@@ -7,7 +7,8 @@
                 "default": "entity_alphatest",
                 "cape": "entity_alphatest",
                 "animated": "player_animated",
-                "render_method": "render_method"
+                "render_method": "render_method",
+                "light_directionhud": "light_directionhud"
             },
             "textures": {
                 "default": "textures/entity/steve",
@@ -112,7 +113,8 @@
                 "sneaking": ".light/textures/mods/status/sneaking",
                 "jumping": ".light/textures/mods/status/jumping",
                 "standing": ".light/textures/mods/status/standing",
-                "moving": ".light/textures/mods/status/moving"
+                "moving": ".light/textures/mods/status/moving",
+                "light_directionhud": ".light/textures/mods/light_directionhud"
             },
             "geometry": {
                 "default": "geometry.humanoid.custom",
@@ -131,6 +133,7 @@
                 "light_coords_y2": "geometry.light_coords_y2",
                 "light_coords_z": "geometry.light_coords_z",
                 "light_coords_z2": "geometry.light_coords_z2",
+                "light_directionhud": "geometry.light_directionhud",
                 "chyves_cape": "geometry.chyves_cape"
             },
             "scripts": {
@@ -274,6 +277,9 @@
                 },
                 {
                     "controller.render.chyves_cape": "!variable.is_first_person && query.armor_texture_slot(1) != 5"
+                },
+                {
+                    "controller.render.light_directionhud": "variable.is_paperdoll && !query.is_in_ui"
                 }
             ],
             "enable_attachables": true
