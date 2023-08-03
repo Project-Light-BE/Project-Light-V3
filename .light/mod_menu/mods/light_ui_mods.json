@@ -9,10 +9,9 @@
         ],
         "controls": [
             {
-                "image": {
+                "image@pl.img": {
                     "clips_children": true,
                     "texture": ".light/textures/clear",
-                    "type": "image",
                     "size": [
                         162,
                         52
@@ -21,8 +20,7 @@
                     "anchor_to": "bottom_right",
                     "controls": [
                         {
-                            "inventory_grid": {
-                                "type": "grid",
+                            "inventory_grid@pl.grd": {
                                 "collection_name": "hotbar_items",
                                 "grid_item_template": "light_mods_panel.inventory_hud",
                                 "grid_dimensions": [
@@ -44,7 +42,7 @@
             }
         ]
     },
-    "inventory_hud": {
+    "inventory_hud@pl.pnl": {
         "$durability_bar_required": true,
         "$item_collection_name": "hotbar_items",
         "$stack_count_required": true,
@@ -82,7 +80,6 @@
         "size": [
             18,
             18
-        ],
-        "type": "panel"
+        ]
     }
 }
