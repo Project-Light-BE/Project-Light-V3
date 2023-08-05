@@ -1,5 +1,43 @@
 {
     "namespace": "light_hud_animations",
+    "light_durability_start": {
+        "anim_type": "wait",
+        "duration": 2,
+        "next": "@light_hud_animations.light_durability_anim"
+    },
+    "light_durability_anim": {
+        "anim_type": "offset",
+        "easing": "out_back",
+        "duration": 0.5,
+        "from": [
+            -50,
+            5
+        ],
+        "to": [
+            5,
+            5
+        ],
+        "next": "@light_hud_animations.light_durability_wait"
+    },
+    "light_durability_wait": {
+        "anim_type": "wait",
+        "duration": 6,
+        "next": "@light_hud_animations.light_durability_end"
+    },
+    "light_durability_end": {
+        "anim_type": "offset",
+        "easing": "in_sine",
+        "duration": 0.5,
+        "from": [
+            5,
+            5
+        ],
+        "to": [
+            -50,
+            5
+        ],
+        "destroy_at_end": "@light_hud_animations.light_durability_start"
+    },
     "light_hud_popup@pl.pnl": {
         "layer": 1,
         "controls": [

@@ -44,6 +44,9 @@
                 "force_coords@light_mods_panel.force_coords": {}
             },
             {
+                "low_durability_ping@light_mods_panel.low_durability_ping": {}
+            },
+            {
                 "stack_panel1@pl.vsp": {
                     "anchor_from": "bottom_left",
                     "anchor_to": "bottom_left",
