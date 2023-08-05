@@ -1,0 +1,305 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.light_coords_x1": {
+            "geometry": "geometry.light_coords_x",
+            "materials": [
+                {
+                    "*": "material.render_method"
+                }
+            ],
+            "textures": [
+                "array.light3[variable.light_coords_x]",
+                "array.light2[variable.light_coords_x/10]",
+                "array.light1[variable.light_coords_x/100]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.light1": [
+                        "Texture.light1_num0",
+                        "Texture.light1_num1",
+                        "Texture.light1_num2",
+                        "Texture.light1_num3",
+                        "Texture.light1_num4",
+                        "Texture.light1_num5",
+                        "Texture.light1_num6",
+                        "Texture.light1_num7",
+                        "Texture.light1_num8",
+                        "Texture.light1_num9"
+                    ],
+                    "array.light2": [
+                        "Texture.light2_num0",
+                        "Texture.light2_num1",
+                        "Texture.light2_num2",
+                        "Texture.light2_num3",
+                        "Texture.light2_num4",
+                        "Texture.light2_num5",
+                        "Texture.light2_num6",
+                        "Texture.light2_num7",
+                        "Texture.light2_num8",
+                        "Texture.light2_num9"
+                    ],
+                    "array.light3": [
+                        "Texture.light3_num0",
+                        "Texture.light3_num1",
+                        "Texture.light3_num2",
+                        "Texture.light3_num3",
+                        "Texture.light3_num4",
+                        "Texture.light3_num5",
+                        "Texture.light3_num6",
+                        "Texture.light3_num7",
+                        "Texture.light3_num8",
+                        "Texture.light3_num9"
+                    ]
+                }
+            }
+        },
+        "controller.render.light_coords_x2": {
+            "geometry": "geometry.light_coords_x2",
+            "materials": [
+                {
+                    "*": "material.render_method"
+                }
+            ],
+            "textures": [
+                "variable.light_coords_neg_x ? Texture.negative : Texture.blank",
+                "array.light2[variable.light_coords_x/1000]",
+                "array.light1[variable.light_coords_x/10000]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.light1": [
+                        "Texture.light2_num0",
+                        "Texture.light2_num1",
+                        "Texture.light2_num2",
+                        "Texture.light2_num3",
+                        "Texture.light2_num4",
+                        "Texture.light2_num5",
+                        "Texture.light2_num6",
+                        "Texture.light2_num7",
+                        "Texture.light2_num8",
+                        "Texture.light2_num9"
+                    ],
+                    "array.light2": [
+                        "Texture.light3_num0",
+                        "Texture.light3_num1",
+                        "Texture.light3_num2",
+                        "Texture.light3_num3",
+                        "Texture.light3_num4",
+                        "Texture.light3_num5",
+                        "Texture.light3_num6",
+                        "Texture.light3_num7",
+                        "Texture.light3_num8",
+                        "Texture.light3_num9"
+                    ]
+                }
+            }
+        },
+        "controller.render.light_coords_y1": {
+            "geometry": "geometry.light_coords_y",
+            "materials": [
+                {
+                    "*": "material.render_method"
+                }
+            ],
+            "textures": [
+                "array.light3[variable.light_coords_y]",
+                "array.light2[variable.light_coords_y/10]",
+                "array.light1[variable.light_coords_y/100]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.light1": [
+                        "Texture.light1_num0",
+                        "Texture.light1_num1",
+                        "Texture.light1_num2",
+                        "Texture.light1_num3",
+                        "Texture.light1_num4",
+                        "Texture.light1_num5",
+                        "Texture.light1_num6",
+                        "Texture.light1_num7",
+                        "Texture.light1_num8",
+                        "Texture.light1_num9"
+                    ],
+                    "array.light2": [
+                        "Texture.light2_num0",
+                        "Texture.light2_num1",
+                        "Texture.light2_num2",
+                        "Texture.light2_num3",
+                        "Texture.light2_num4",
+                        "Texture.light2_num5",
+                        "Texture.light2_num6",
+                        "Texture.light2_num7",
+                        "Texture.light2_num8",
+                        "Texture.light2_num9"
+                    ],
+                    "array.light3": [
+                        "Texture.light3_num0",
+                        "Texture.light3_num1",
+                        "Texture.light3_num2",
+                        "Texture.light3_num3",
+                        "Texture.light3_num4",
+                        "Texture.light3_num5",
+                        "Texture.light3_num6",
+                        "Texture.light3_num7",
+                        "Texture.light3_num8",
+                        "Texture.light3_num9"
+                    ]
+                }
+            }
+        },
+        "controller.render.light_coords_y2": {
+            "geometry": "geometry.light_coords_y2",
+            "materials": [
+                {
+                    "*": "material.render_method"
+                }
+            ],
+            "textures": [
+                "variable.light_coords_neg_y ? Texture.negative : Texture.blank",
+                "array.light2[variable.light_coords_y/1000]",
+                "array.light1[variable.light_coords_y/10000]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.light1": [
+                        "Texture.light2_num0",
+                        "Texture.light2_num1",
+                        "Texture.light2_num2",
+                        "Texture.light2_num3",
+                        "Texture.light2_num4",
+                        "Texture.light2_num5",
+                        "Texture.light2_num6",
+                        "Texture.light2_num7",
+                        "Texture.light2_num8",
+                        "Texture.light2_num9"
+                    ],
+                    "array.light2": [
+                        "Texture.light3_num0",
+                        "Texture.light3_num1",
+                        "Texture.light3_num2",
+                        "Texture.light3_num3",
+                        "Texture.light3_num4",
+                        "Texture.light3_num5",
+                        "Texture.light3_num6",
+                        "Texture.light3_num7",
+                        "Texture.light3_num8",
+                        "Texture.light3_num9"
+                    ]
+                }
+            }
+        },
+        "controller.render.light_coords_z1": {
+            "geometry": "geometry.light_coords_z",
+            "materials": [
+                {
+                    "*": "material.render_method"
+                }
+            ],
+            "textures": [
+                "array.light3[variable.light_coords_z]",
+                "array.light2[variable.light_coords_z/10]",
+                "array.light1[variable.light_coords_z/100]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.light1": [
+                        "Texture.light1_num0",
+                        "Texture.light1_num1",
+                        "Texture.light1_num2",
+                        "Texture.light1_num3",
+                        "Texture.light1_num4",
+                        "Texture.light1_num5",
+                        "Texture.light1_num6",
+                        "Texture.light1_num7",
+                        "Texture.light1_num8",
+                        "Texture.light1_num9"
+                    ],
+                    "array.light2": [
+                        "Texture.light2_num0",
+                        "Texture.light2_num1",
+                        "Texture.light2_num2",
+                        "Texture.light2_num3",
+                        "Texture.light2_num4",
+                        "Texture.light2_num5",
+                        "Texture.light2_num6",
+                        "Texture.light2_num7",
+                        "Texture.light2_num8",
+                        "Texture.light2_num9"
+                    ],
+                    "array.light3": [
+                        "Texture.light3_num0",
+                        "Texture.light3_num1",
+                        "Texture.light3_num2",
+                        "Texture.light3_num3",
+                        "Texture.light3_num4",
+                        "Texture.light3_num5",
+                        "Texture.light3_num6",
+                        "Texture.light3_num7",
+                        "Texture.light3_num8",
+                        "Texture.light3_num9"
+                    ]
+                }
+            }
+        },
+        "controller.render.light_coords_z2": {
+            "geometry": "geometry.light_coords_z2",
+            "materials": [
+                {
+                    "*": "material.render_method"
+                }
+            ],
+            "textures": [
+                "variable.light_coords_neg_z ? Texture.negative : Texture.blank",
+                "array.light2[variable.light_coords_z/1000]",
+                "array.light1[variable.light_coords_z/10000]"
+            ],
+            "filter_lighting": true,
+            "ignore_lighting": true,
+            "light_color_multiplier": 1.25,
+            "arrays": {
+                "textures": {
+                    "array.light1": [
+                        "Texture.light2_num0",
+                        "Texture.light2_num1",
+                        "Texture.light2_num2",
+                        "Texture.light2_num3",
+                        "Texture.light2_num4",
+                        "Texture.light2_num5",
+                        "Texture.light2_num6",
+                        "Texture.light2_num7",
+                        "Texture.light2_num8",
+                        "Texture.light2_num9"
+                    ],
+                    "array.light2": [
+                        "Texture.light3_num0",
+                        "Texture.light3_num1",
+                        "Texture.light3_num2",
+                        "Texture.light3_num3",
+                        "Texture.light3_num4",
+                        "Texture.light3_num5",
+                        "Texture.light3_num6",
+                        "Texture.light3_num7",
+                        "Texture.light3_num8",
+                        "Texture.light3_num9"
+                    ]
+                }
+            }
+        }
+    }
+}
