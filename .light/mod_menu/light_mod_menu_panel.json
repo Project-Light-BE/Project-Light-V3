@@ -3,8 +3,9 @@
     "light_mod_menu_panel@config.mod_menu_config": {
         "type": "panel",
         "controls": [
-            {
+            {/*
                 "light_mod_menu@light_mod_menu.mod_menu": {}
+             */
             }
         ]
     },
@@ -12,7 +13,7 @@
         "controls": [
             {
                 "mod_menu_bg@pl.img": {
-                    "texture": ".light/texture/bg/base_bg",
+                    "texture": ".light/textures/bg/base_bg",
                     "size": [
                         325,
                         200
@@ -29,7 +30,7 @@
         ]
     },
     "mod_menu_header@pl.img": {
-        "texture": ".light/texture/bg/base_bg",
+        "texture": ".light/textures/bg/base_bg",
         "size": [
             325,
             35
@@ -49,7 +50,7 @@
             35,
             35
         ],
-        "texture": ".light/texture/logo",
+        "texture": ".light/textures/logo",
         "anchor_from": "left_middle",
         "anchor_to": "left_middle",
         "layer": 3,

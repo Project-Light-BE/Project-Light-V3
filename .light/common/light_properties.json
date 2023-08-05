@@ -4,7 +4,8 @@
         "type": "image"
     },
     "lbl": {
-        "type": "label"
+        "type": "label",
+        "font_type": "Inter-Medium"
     },
     "pnl": {
         "type": "panel"

@@ -1,5 +1,211 @@
 {
     "namespace": "light_mods_panel",
+    "low_durability_ping@pl.pnl": {
+        "layer": 1,
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "size": [
+            "180px",
+            "36px"
+        ],
+        "controls": [
+            {
+                "durability_ping_grid@light_mods_panel.durability_ping_grid": {}
+            }
+        ]
+    },
+    "durability_ping_grid@pl.grd": {
+        "grid_item_template": "light_mods_panel.durability_ping_panel",
+        "grid_dimension_binding": "#hotbar_grid_dimensions",
+        "collection_name": "hotbar_items",
+        "size": [
+            "100%cm",
+            "100%cm"
+        ],
+        "bindings": [
+            {
+                "binding_name": "#hotbar_grid_dimensions",
+                "binding_type": "global"
+            }
+        ]
+    },
+    "durability_ping_panel@pl.pnl": {
+        "controls": [
+            {
+                "durability_ping@light_mods_panel.durability_ping": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "#slot_selected",
+                "binding_name_override": "#visible",
+                "binding_type": "collection",
+                "binding_collection_name": "hotbar_items"
+            }
+        ]
+    },
+    "durability_ping@pl.pnl": {
+        "controls": [
+            {
+                "durability_ping_bg@light_mods_panel.durability_ping_bg": {}
+            }
+        ],
+        "bindings": [
+            {
+                "binding_name": "(not (#item_durability_total_amount = 0))",
+                "binding_name_override": "#visible",
+                "binding_type": "collection",
+                "binding_collection_name": "hotbar_items"
+            }
+        ]
+    },
+    "durability_ping_bg@pl.pnl": {
+        "layer": 1,
+        "controls": [
+            {
+                "durability_ping_bg@pl.img": {
+                    "texture": ".light/textures/bg/base_bg",
+                    "size": [
+                        "180px",
+                        "36px"
+                    ],
+                    "alpha": 0.65,
+                    "offset": [
+                        5,
+                        5
+                    ],
+                    "controls": [
+                        {
+                            "durability_ping_content@pl.hsp": {
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "offset": [
+                                    0,
+                                    "8%"
+                                ],
+                                "controls": [
+                                    {
+                                        "padding_0@pl.pnl": {
+                                            "size": [
+                                                5,
+                                                0
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "durability_ping_item_renderer@light_mods_panel.durability_ping_item_renderer": {}
+                                    },
+                                    {
+                                        "padding_1@pl.pnl": {
+                                            "size": [
+                                                5,
+                                                0
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "durability_ping_text@light_mods_panel.durability_ping_text": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "$total_amount": "#item_durability_total_amount",
+                    "$current_amount": "#item_durability_current_amount",
+                    "$min_durability": 0,
+                    "$max_durability": 0.26,
+                    "bindings": [
+                        {
+                            "binding_name": "$total_amount",
+                            "binding_type": "collection",
+                            "binding_collection_name": "hotbar_items"
+                        },
+                        {
+                            "binding_name": "$current_amount",
+                            "binding_type": "collection",
+                            "binding_collection_name": "hotbar_items"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "((($current_amount / $total_amount) > $min_durability) and (($current_amount / $total_amount) < $max_durability)) or (($current_amount / $total_amount) = $min_durability)",
+                            "target_property_name": "#visible"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "durability_ping_text": {
+        "type": "stack_panel",
+        "size": [
+            "100%",
+            "100%c"
+        ],
+        "controls": [
+            {
+                "durability_ping_alert@light_mods_panel.durability_ping_alert": {}
+            },
+            {
+                "durability_id_aux@light_mods_panel.durability_id_aux": {}
+            }
+        ]
+    },
+    "durability_id_aux": {
+        "type": "label",
+        "text": "#text",
+        "layer": 5,
+        "font_type": "Inter-Medium",
+        "bindings": [
+            {
+                "binding_name": "#item_id_aux",
+                "binding_type": "collection",
+                "binding_collection_name": "hotbar_items"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "('ID Aux: §z' + #item_id_aux)",
+                "target_property_name": "#text"
+            }
+        ]
+    },
+    "durability_ping_alert": {
+        "type": "label",
+        "text": "§eTool Durability Low!",
+        "layer": 5,
+        "font_type": "Inter-Medium"
+    },
+    "durability_ping_item_renderer": {
+        "type": "stack_panel",
+        "offset": [
+            0,
+            "50%"
+        ],
+        "size": [
+            22,
+            "100%c"
+        ],
+        "controls": [
+            {
+                "padding_0": {
+                    "type": "panel",
+                    "size": [
+                        0,
+                        5
+                    ]
+                }
+            },
+            {
+                "item_renderer@common.item_renderer": {
+                    "size": [
+                        22,
+                        22
+                    ],
+                    "$item_collection_name": "hotbar_items",
+                    "item_renderer_binding_condition": "always_when_visible"
+                }
+            }
+        ]
+    },
     "inventory_hud_panel@pl.pnl": {
         "anchor_from": "bottom_right",
         "anchor_to": "bottom_right",
@@ -80,204 +286,6 @@
         "size": [
             18,
             18
-        ]
-    },
-    "low_durability_ping@pl.pnl": {
-        "layer": 1,
-        "controls": [
-            {
-                "durability_ping_grid@light_mods_panel.durability_ping_grid": {}
-            }
-        ]
-    },
-    "durability_ping_grid@pl.grd": {
-        "grid_item_template": "light_mods_panel.durability_ping_panel",
-        "grid_dimension_binding": "#hotbar_grid_dimensions",
-        "collection_name": "hotbar_items",
-        "size": [
-            "100%cm",
-            "100%cm"
-        ],
-        "bindings": [
-            {
-                "binding_name": "#hotbar_grid_dimensions",
-                "binding_type": "global"
-            }
-        ]
-    },
-    "durability_ping_panel@pl.pnl": {
-        "controls": [
-            {
-                "durability_ping@light_mods_panel.durability_ping": {}
-            }
-        ],
-        "bindings": [
-            {
-                "binding_name": "#slot_selected",
-                "binding_name_override": "visible",
-                "binding_type": "collection",
-                "binding_collection_name": "hotbar_items"
-            }
-        ]
-    },
-    "durability_ping@pl.pnl": {
-        "controls": [
-            {
-                "durability_ping_bg@light_mods_panel.durability_ping_bg": {}
-            }
-        ],
-        "bindings": [
-            {
-                "binding_name": "(not (#item_durability_total_amount = 0))",
-                "binding_name_override": "visible",
-                "binding_type": "collection",
-                "binding_collection_name": "hotbar_items"
-            }
-        ]
-    },
-    "durability_ping_bg@pl.img": {
-        "texture": ".light/textures/bg/base_bg",
-        "anchor_from": "top_left",
-        "anchor_to": "top_left",
-        "size": [
-            "100%c - 13px",
-            "100%c - 6px"
-        ],
-        "alpha": 0.65,
-        "offset": [
-            -50,
-             5
-        ],
-        "anims": [
-            "light_hud_animations.light_durability_start"
-        ],
-        "controls": [
-            {
-                "durability_ping_content@pl.hsp":{
-                    "anchor_from": "left_middle",
-                    "anchor_to": "left_middle",
-                    "offset": [
-                        0,
-                        "8%"
-                    ],
-                    "controls": [
-                        {
-                            "padding_0@pl.pnl": {
-                                "size": [
-                                    5,
-                                    0
-                                ]
-                            }
-                        },
-                        {
-                            "durability_ping_item_renderer@light_mods_panel.durability_ping_item_renderer": {}
-                        },
-                        {
-                            "padding_1@pl.pnl": {
-                                "size": [
-                                    5,
-                                    0
-                                ]
-                            }
-                        },
-                        {
-                            "durability_ping_text@light_mds_panel.durability_ping_text": {}
-                        }
-                    ]
-                }
-            }
-        ],
-        "$total_amount": "#item_durability_total_amount",
-        "$current_amount": "#item_durability_current_amount",
-        "$min_durability": 0,
-        "$max_durability": 0.26,
-        "bindings": [
-            {
-                "binding_name": "$total_amount",
-                "binding_type": "collection",
-                "binding_collection_name": "hotbar_items"
-            },
-            {
-                "binding_name": "$current_amount",
-                "binding_type": "collection",
-                "binding_collection_name": "hotbar_items"
-            },
-            {
-                "binding_type": "view",
-                "source_property_name": "((($current_amount / $total_amount) > $min_durability) and (($current_amount / $total_amount) < $max_durability)) or (($current_amount / $total_amount) = $min_durability)",
-                "target_property_name": "#visible"
-            }
-        ]
-    },
-    "durability_ping_text": {
-        "type": "stack_panel",
-        "size": [
-            "100%",
-            "100%c"
-        ],
-        "controls": [
-            {
-                "durability_ping_alert@light_mods_panel.durability_ping_alert": {}
-            },
-            {
-                "durability_id_aux@light_mods_panel.durability_id_aux": {}
-            }
-        ]
-    },
-    "durability_id_aux": {
-        "type": "label",
-        "text": "#text",
-        "layer": 5,
-        "font_type": "Inter-Medium",
-        "bindings": [
-            {
-                "binding_name": "#item_id_aux",
-                "binding_type": "collection",
-                "binding_collection_name": "hotbar_items"
-            },
-            {
-                "binding_type": "view",
-                "source_property_name": "('ID Aux: §z' + #item_id_aux)",
-                "target_property_name": "#text"
-            }
-        ]
-    },
-    "durability_ping_alert": {
-        "type": "label",
-        "text": "§eTool Durability Low!",
-        "layer": 5,
-        "font_type": "Inter-Medium"
-    },
-    "durability_ping_item_renderer": {
-        "type": "stack_panel",
-        "offset": [
-            0,
-            "50%"
-        ],
-        "size": [
-            22,
-            "100%c"
-        ],
-        "controls": [
-            {
-                "padding_0": {
-                    "type": "panel",
-                    "size": [
-                        0,
-                        5
-                    ]
-                }
-            },
-            {
-                "item_renderer@common.item_renderer": {
-                    "size": [
-                        22,
-                        22
-                    ],
-                    "$item_collection_name": "hotbar_items",
-                    "item_renderer_binding_condition": "always_when_visible"
-                }
-            }
         ]
     }
 }

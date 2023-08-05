@@ -1,8 +1,0 @@
-{
-    "pause_screen@common.base_screen": {
-        "$screen_content": "light_pause.light_pause_main_content",
-        "variables": [],
-        "force_render_below": true,
-        "button_mappings": []
-    }
-}
