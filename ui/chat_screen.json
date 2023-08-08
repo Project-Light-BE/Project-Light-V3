@@ -512,5 +512,14 @@
         "$pressed_texture": "textures/ui/button_borderless_lighthover",
         "$pressed_no_hover_texture": "textures/ui/button_borderless_lighthover",
         "$default_checked_text_color": "$light_toggle_default_text_color"
+    },
+    "chat_background": {
+        "type": "image",
+        "texture": ".light/textures/bg/secondary_bg",
+        "size":[
+            "100%",
+            "100%"
+        ],
+        "alpha": 0.7
     }
 }
