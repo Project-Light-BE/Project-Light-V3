@@ -256,7 +256,9 @@
             }
         ]
     },
-    "chat_header/title_panel": {
+    "chat_header_real": {
+        "type":"image",
+        "texture": ".light/textures/bg/base_bg",
         "size": [
             "100%",
             30
@@ -346,6 +348,13 @@
                 }
             }
         ]
+    },
+    "chat_header/title_panel": {
+        "size": [
+            "100%",
+            30
+        ],
+        "visible": false
     },
     "commands_panel": {
         "size": [
