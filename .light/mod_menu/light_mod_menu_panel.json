@@ -3,9 +3,9 @@
     "light_mod_menu_panel@config.mod_menu_config": {
         "type": "panel",
         "controls": [
-            {/*
+            {
                 "light_mod_menu@light_mod_menu.mod_menu": {}
-             */
+             
             }
         ]
     },
