@@ -4,7 +4,25 @@
         "close_on_player_hurt": false,
         "$render_bg": true
     },
+    "chat_anim_size": {
+        "anim_type": "size",
+        "easing": "out_quint",
+        "duration": 2.3,
+        "from": [
+            "10%",
+            "80%"
+        ],
+        "to": [
+            "85%",
+            "85%"
+        ]
+    },
     "chat_screen_content": {
+        "size": "@chat.chat_anim_size",
+        "offset": [
+            0,
+            0
+        ],
         "modifications": [
             {
                 "control_name": "controls",
@@ -32,6 +50,9 @@
                                 }
                             ]
                         }
+                    },
+                    {
+                        "chat_background@chat.chat_background": {}
                     }
                 ]
             }
@@ -256,105 +277,114 @@
             }
         ]
     },
-    "chat_header_real": {
-        "type":"image",
-        "texture": ".light/textures/bg/base_bg",
-        "size": [
-            "100%",
-            30
-        ],
+    "chat_header@common_store.store_top_bar": {
+        "anchor_to": "top_left",
+        "anchor_from": "top_left",
+        "$back_button_text": "controller.buttonTip.back",
         "controls": [
             {
-                "back_uhhh_panel@chat.back_content_panel": {}
-            },
-            {
-                "chat_title": {
-                    "type": "label",
-                    "text": "Chat",
-                    "font_type": "MinecraftTen",
-                    "max_size": [
-                        "100%",
-                        35
-                    ],
-                    "anchor_from": "left_middle",
-                    "anchor_to": "left_middle",
-                    "offset": [
-                        20,
-                        -2
-                    ],
-                    "color": "black"
-                }
-            },
-            {
-                "popup_dialog_factory": {
-                    "type": "factory",
-                    "control_ids": {
-                        "toast_message": "@chat.popup_toast"
-                    }
-                }
-            },
-            {
-                "copy_coordinate_panel@chat.copy_coordinate_panel": {}
-            },
-            {
-                "mute_all_chat@settings_common.option_toggle": {
-                    "anchor_from": "top_right",
-                    "anchor_to": "top_right",
-                    "offset": [
-                        -2,
-                        6
-                    ],
-                    "size": [
-                        "25%",
-                        "100%c"
-                    ],
-                    "$one_line_layout": true,
-                    "$option_label": "",
-                    "$option_binding_name": "#hide_chat",
-                    "$toggle_name": "hide_chat"
-                }
-            },
-            {
-                "mute_all_chat_label_panel": {
+                "title_panel": {
                     "type": "panel",
                     "size": [
-                        "25% - 36px",
-                        20
-                    ],
-                    "anchor_from": "top_right",
-                    "anchor_to": "top_right",
-                    "offset": [
-                        -2,
-                        4
+                        "100%",
+                        19
                     ],
                     "controls": [
                         {
-                            "mute_all_chat_label": {
+                            "back_uhhh_panel@chat.back_content_panel": {}
+                        },
+                        {
+                            "light_logo@light_mod_menu.light_logo": {
+                                "offset": [
+                                    "2%",
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "chat_title": {
                                 "type": "label",
-                                "text": "chat.settings.muteAll",
+                                "text": "Chat",
+                                "font_type": "MinecraftTen",
+                                "font_scale_factor": 1.1,
+                                "anchor_from": "left_middle",
+                                "anchor_to": "left_middle",
+                                "offset": [
+                                    "8%",
+                                    0
+                                ],
+                                "color": "white"
+                            }
+                        },
+                        {
+                            "popup_dialog_factory": {
+                                "type": "factory",
+                                "control_ids": {
+                                    "toast_message": "@chat.popup_toast"
+                                }
+                            }
+                        },
+                        {
+                            "copy_coordinate_panel@chat.copy_coordinate_panel": {
+                                "anchor_from": "center",
+                                "anchor_to": "center"
+                            }
+                        },
+                        {
+                            "mute_all_chat@settings_common.option_toggle": {
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+                                "offset": [
+                                    "1%",
+                                    3
+                                ],
                                 "size": [
-                                    "100%",
-                                    "default"
+                                    "25%",
+                                    "100%c"
                                 ],
-                                "max_size": [
-                                    "100%",
-                                    "100%"
+                                "$one_line_layout": true,
+                                "$option_label": "",
+                                "$option_binding_name": "#hide_chat",
+                                "$toggle_name": "hide_chat"
+                            }
+                        },
+                        {
+                            "mute_all_chat_label_panel": {
+                                "type": "panel",
+                                "size": [
+                                    "25% - 36px",
+                                    20
                                 ],
-                                "text_alignment": "left",
-                                "color": "$title_text_color"
+                                "anchor_from": "right_middle",
+                                "anchor_to": "right_middle",
+                                "offset": [
+                                    "0.7%",
+                                    3
+                                ],
+                                "controls": [
+                                    {
+                                        "mute_all_chat_label": {
+                                            "type": "label",
+                                            "text": "chat.settings.muteAll",
+                                            "size": [
+                                                "100%",
+                                                "default"
+                                            ],
+                                            "max_size": [
+                                                "100%",
+                                                "100%"
+                                            ],
+                                            "text_alignment": "left",
+                                            "color": "$title_text_color"
+                                        }
+                                    }
+                                ]
                             }
                         }
                     ]
                 }
             }
         ]
-    },
-    "chat_header/title_panel": {
-        "size": [
-            "100%",
-            30
-        ],
-        "visible": false
     },
     "commands_panel": {
         "size": [
@@ -507,7 +537,7 @@
         ],
         "sound_name": "random.release"
     },
-    "light_content_toggle_visibility_one_button_state@chat.light_content_toggle_visibility": {
+    "light_content_toggle_visibility_one_button_state@chat.light_content_toggle_visibility": { // very long name 
         "$hover_texture": "textures/ui/button_borderless_light",
         "$pressed_texture": "textures/ui/button_borderless_lighthover",
         "$pressed_no_hover_texture": "textures/ui/button_borderless_lighthover",
@@ -516,10 +546,22 @@
     "chat_background": {
         "type": "image",
         "texture": ".light/textures/bg/secondary_bg",
-        "size":[
-            "100%",
-            "100%"
-        ],
-        "alpha": 0.7
+        "alpha": 0.44
+    },
+    "chat_screen@common.base_screen": {
+        "close_on_player_hurt": false,
+        "$screen_content": "chat.chat_screen_content",
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_exit",
+                "to_button_id": "button.chat_menu_cancel",
+                "mapping_type": "global"
+            },
+            {
+                "from_button_id": "button.menu_cancel",
+                "to_button_id": "button.chat_menu_cancel",
+                "mapping_type": "global"
+            }
+        ]
     }
 }
