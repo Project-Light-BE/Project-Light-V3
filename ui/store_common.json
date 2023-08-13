@@ -1,0 +1,21 @@
+{
+    "namespace": "common_store",
+    "banner_fill": {
+        "type": "image",
+        "alpha": 0.4,
+        "texture": ".light/textures/bg/base_bg"
+    },
+    "store_top_bar": {
+        "type": "image",
+        "texture": ".light/textures/bg/base_bg",
+        "size": [
+            "100%",
+            30
+        ]
+    },
+    "store_top_bar_filler": {
+        "type": "image",
+        "alpha": 0.4,
+        "texture": ".light/textures/bg/base_bg"
+    }
+}
