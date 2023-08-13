@@ -9,6 +9,7 @@
         "type": "image",
         "texture": ".light/textures/bg/base_bg",
         "alpha": 0.65,
+        "layer": 3,
         "size": [
             "100%",
             30

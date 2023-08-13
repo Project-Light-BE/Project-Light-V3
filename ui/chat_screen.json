@@ -39,7 +39,7 @@
                             ],
                             "controls": [
                                 {
-                                    "notes@common.multiline_text_edit_box": {
+                                    "notes@common.scrollable_multiline_text_edit_box": {
                                         "size": [
                                             "20%",
                                             "20% - 20px"
@@ -545,8 +545,8 @@
     },
     "chat_background": {
         "type": "image",
-        "texture": ".light/textures/bg/secondary_bg",
-        "alpha": 0.65
+        "texture": ".light/textures/bg/base_bg",
+        "alpha": 0.40
     },
     "chat_screen@common.base_screen": {
         "close_on_player_hurt": false,
