@@ -546,7 +546,7 @@
     "chat_background": {
         "type": "image",
         "texture": ".light/textures/bg/secondary_bg",
-        "alpha": 0.44
+        "alpha": 0.65
     },
     "chat_screen@common.base_screen": {
         "close_on_player_hurt": false,
